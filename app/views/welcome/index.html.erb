@@ -1,0 +1,9 @@
+<%= form_tag("/predict_email", method: "post") do %>
+  <%= label_tag(:first_name, "First Name:") %>
+  <%= text_field_tag(:first_name) %>
+  <%= label_tag(:last_name, "Last Name:") %>
+  <%= text_field_tag(:last_name) %>
+  <%= label_tag(:domain_name, "Organization Domain Name:") %>
+  <%= text_field_tag(:domain_name) %>
+  <%= submit_tag("Predict Email") %>
+<% end %>
